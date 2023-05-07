@@ -25,4 +25,12 @@ Requirements:
 10. All non-sensitive data should be stored using configmaps
 11. kubeadm, kubectl, kubelet, and Docker
 
-
+Project steps:
+1. Getting started with Pods, Services, and Deployments
+2. Creating and Verifying the Service
+3. Creating a token and working on a dashboard
+4. Configure the NFS server for MySQL and WordPress Deployment
+5. Setting up the NFS Client side
+6. Creating and verifying the PV
+7. Creating a secret for MySQL Deployments secret data
+8. Creating a configmap for WordPress Deployment to store non-sensitive information
