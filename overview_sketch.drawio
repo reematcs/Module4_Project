@@ -1,11 +1,20 @@
-<mxfile modified="2023-05-07T16:46:00.127Z" host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="faWN_-tI9_E7bEA1rAaz" version="21.2.9" type="github">
+<mxfile modified="2023-05-07T17:36:29.740Z" host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="0Z6z_lxDbyvqxNr1cVMV" version="21.2.9" type="github">
   <diagram id="f106602c-feb2-e66a-4537-3a34d633f6aa" name="Page-1">
-    <mxGraphModel dx="940" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+    <mxGraphModel dx="692" dy="1268" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="818" value="Architecture: Websites &amp;gt; Content Hosting" style="fillColor=#FAE5C7;strokeColor=none;shadow=1;fontSize=14;align=left;spacingLeft=50;fontColor=#143642;html=1;rounded=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="230" y="40" width="720" height="40" as="geometry" />
+        <mxCell id="QHra98rToHe2LogXNTIJ-1073" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="130" y="61" width="500" height="199" as="geometry" />
+        </mxCell>
+        <mxCell id="QHra98rToHe2LogXNTIJ-1062" value="" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;dashed=1;strokeWidth=2;rounded=1;" vertex="1" parent="QHra98rToHe2LogXNTIJ-1073">
+          <mxGeometry x="10" y="19" width="490" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="QHra98rToHe2LogXNTIJ-1066" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];verticalLabelPosition=bottom;align=center;verticalAlign=top;shape=mxgraph.kubernetes.icon;prIcon=deploy;fontColor=#1D3557;" vertex="1" parent="QHra98rToHe2LogXNTIJ-1073">
+          <mxGeometry width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="QHra98rToHe2LogXNTIJ-1069" value="Wordpress" style="text;align=center;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=1;labelBackgroundColor=default;fillColor=default;shadow=1;fontSize=21;fontFamily=Tahoma;strokeColor=#ffffff;" vertex="1" parent="QHra98rToHe2LogXNTIJ-1073">
+          <mxGeometry x="55" y="6" width="135" height="24" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
