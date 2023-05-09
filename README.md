@@ -54,3 +54,10 @@ Enable the NFS server:
 
 `sudo systemctl enable --now nfs-server
 sudo exportfs -ar`
+
+
+Prepare the other nodes (`master` & `worker-node01`):
+
+`sudo apt install -y nfs-common
+`
+
