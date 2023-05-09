@@ -42,12 +42,15 @@ On node 3 (`worker-node02`):
 `sudo apt update && sudo apt -y upgrade
 sudo apt install -y nfs-server
 sudo mkdir /data
-sudo vim /etc/exports
-`
+sudo vim /etc/exports`
+
+
 Add the following lines to the end of the file:
+
 `/data 172.31.61.171(rw,no_subtree_check,no_root_squash)
 /data 172.31.27.232(rw,no_subtree_check,no_root_squash)`
 
 Enable the NFS server:
+
 `sudo systemctl enable --now nfs-server
 sudo exportfs -ar`
