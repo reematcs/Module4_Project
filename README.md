@@ -2,8 +2,6 @@
 ## DESCRIPTION
 Project Agenda: To deploy the application using the Kubernetes dashboard 
 
-Description:  
-
 Your organization is looking to create a multi-tier application based on PHP and MySQL. Your job is to deploy this application using the Kubernetes dashboard. Create a user (service account) with the name of Sandry and make sure to assign her an admin role. WordPress and MySQL Pods should use node3 as an NFS storage server using static volumes. WordPress applications must verify the MySQL Service before getting it deployed. If the MySQL Service is not present, then the WordPress Pod should not be deployed. These all should be restricted to the namespace called cep-project1 and must have 3 svcs, and 3 Pods as a max quota. All sensitive data should be used using secrets and non-sensitive data using configmaps.  
 
 Tools Required: kubeadm, kubectl, kubelet, and Docker  
@@ -12,7 +10,7 @@ Expected Deliverables:
 
 Note: Kubernetes cluster needs to be set up in your lab machine to perform the above project
 
-Requirements:
+## Requirements:
 1. Multi-tier application based on PHP and MySQL
 2. Kubernetes dashboard
 3. Create a user (service account) with the name of Sandry and make sure to assign her an admin role
@@ -25,7 +23,7 @@ Requirements:
 10. All non-sensitive data should be stored using configmaps
 11. kubeadm, kubectl, kubelet, and Docker
 
-Project steps:
+## Project steps:
 1. Getting started with Pods, Services, and Deployments
 2. Creating and Verifying the Service
 3. Creating a token and working on a dashboard
@@ -34,3 +32,32 @@ Project steps:
 6. Creating and verifying the PV
 7. Creating a secret for MySQL Deployments secret data
 8. Creating a configmap for WordPress Deployment to store non-sensitive information
+
+## Record of steps
+
+### CREATE NFS
+
+On node 3 (`worker-node02`):
+
+`sudo apt update && sudo apt -y upgrade
+sudo apt install -y nfs-server
+sudo mkdir /data
+sudo vim /etc/exports`
+
+
+Add the following lines to the end of the file:
+
+`/data 172.31.61.171(rw,no_subtree_check,no_root_squash)
+/data 172.31.27.232(rw,no_subtree_check,no_root_squash)`
+
+Enable the NFS server:
+
+`sudo systemctl enable --now nfs-server
+sudo exportfs -ar`
+
+
+Prepare the other nodes (`master` & `worker-node01`):
+
+`sudo apt install -y nfs-common
+`
+
